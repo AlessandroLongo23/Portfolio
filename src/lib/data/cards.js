@@ -14,7 +14,7 @@ export let cards = [
     { 
         date: "2024", 
         title: "Computer Graphics Course", 
-        href: "",
+        href: "https://computer-graphics-self.vercel.app/",
         technologies: ['svelte', 'tailwindcss', 'vite', 'node'] 
     },
     { 
