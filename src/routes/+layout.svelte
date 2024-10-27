@@ -1,4 +1,5 @@
 <script>
+    import { inject } from '@vercel/analytics'
     import { onMount } from 'svelte';
     import "../style/app.css";
 

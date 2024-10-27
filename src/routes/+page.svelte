@@ -1,13 +1,7 @@
 <script>
     import Card from '$lib/components/Card.svelte'
     import { Mail } from 'lucide-svelte';
-
-    export let cards = [
-        { date: "2022 - present", title: "Sapiens Notesharing", technologies: ['svelte', 'bootstrap', 'mongodb', 'docker'] },
-        { date: "2018 - present", title: "Tolom3.0", technologies: ['svelte', 'tailwindcss'] },
-        { date: "2024", title: "Pensieve", technologies: ['tauri', 'svelte', 'tailwindcss'] },
-        { date: "2024", title: "Queen's Game", technologies: ['tauri', 'svelte', 'tailwindcss'] }
-    ];
+    import { cards } from '$lib/data/cards';
 </script>
 
 <div class="flex flex-col gap-16 items-end">
