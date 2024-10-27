@@ -25,7 +25,7 @@
         </h1>
 
         {#each cards as card}
-            <Card classes="mb-8 hover:-translate-x-8 transition-all duration-200" date={card.date} title={card.title} technologies={card.technologies}/>
+            <Card classes="mb-8 hover:-translate-x-8 transition-all duration-200" date={card.date} title={card.title} href={card.href} technologies={card.technologies}/>
         {/each}
     </div>
 

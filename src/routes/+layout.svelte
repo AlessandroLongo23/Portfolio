@@ -47,6 +47,7 @@
 
     onMount(() => {
         customCursor = document.querySelector('.custom-cursor');
+        console.log(customCursor);
         document.addEventListener('mousemove', e => {
             customCursor.style.left = `${e.clientX}px`;
             customCursor.style.top = `${e.clientY}px`;
@@ -102,16 +103,15 @@
     </div>
 
     <div class="flex flex-row justify-start items-center gap-8 w-full">
-        <a href="/www.linkedin.com/in/alessandro-longo-2305d002" class="white opacity-50 hover:opacity-100 transition-all duration-200"><i class="cursor-pointer-none fa fa-linkedin fa-xl"></i></a>
-        <a href="" class="white opacity-50 hover:opacity-100 transition-all duration-200"><i class="cursor-pointer-none fa fa-github fa-xl"></i></a>
-        <a href="" class="white opacity-50 hover:opacity-100 transition-all duration-200"><i class="cursor-pointer-none fa fa-instagram fa-xl"></i></a>
+        <a href="https://www.linkedin.com/in/alessandro-longo-2305d002" class="white opacity-50 hover:opacity-100 transition-all duration-200" aria-label="LinkedIn" target="_blank"><i class="cursor-pointer-none fa fa-linkedin fa-xl"></i></a>
+        <a href="https://github.com/AlessandroLongo23" class="white opacity-50 hover:opacity-100 transition-all duration-200" aria-label="GitHub" target="_blank"><i class="cursor-pointer-none fa fa-github fa-xl"></i></a>
+        <a href="" class="white opacity-50 hover:opacity-100 transition-all duration-200" aria-label="Instagram" target="_blank"><i class="cursor-pointer-none fa fa-instagram fa-xl"></i></a>
     </div>
 </div>
 
 <div id="right-section" class="absolute right-0 flex flex-col w-full h-screen pe-40 ps-8 py-24 overflow-y-auto">
-    <!-- {@render children?.()} -->
+    {@render children?.()}
 </div>
-
 
 <style>
     :global(*) {

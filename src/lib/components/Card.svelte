@@ -1,14 +1,14 @@
 <script>
-    /** @type {{title?: string, date?: string, technologies?: any, classes?: string}} */
     let {
         title = '',
         date = '',
+        href = '',
         technologies = [],
         classes = ''
     } = $props();
 </script>
 
-<a href="">
+<a href={href} target="_blank">
     <div class="card flex flex-col justify-between w-full h-64 border border-white rounded-lg p-8 {classes}">
         <div class="flex flex-row justify-between items-top">
             <p class="text-sm font-thin">{date}</p>
