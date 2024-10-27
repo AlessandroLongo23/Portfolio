@@ -35,7 +35,7 @@
         </h1>
 
         <button class="flex flex-row gap-4 border border-white rounded-lg m-auto px-4 py-2 transition-all duration-200 hover:bg-white/10 active:bg-white/15">Send me an email
-            <svelte:component this={Mail} size={24}/>
+            <Mail size={24}/>
         </button>
     </div>
 </div>

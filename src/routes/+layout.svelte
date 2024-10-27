@@ -2,8 +2,9 @@
     import { inject } from '@vercel/analytics'
     import { onMount } from 'svelte';
     import "../style/app.css";
+    let { children } = $props();
 
-    let activeSection = 'presentation';
+    let activeSection = $state('presentation');
     let customCursor;
 
     function scrollToSection(event) {
@@ -101,15 +102,16 @@
     </div>
 
     <div class="flex flex-row justify-start items-center gap-8 w-full">
-        <a href="/instagram" class="white opacity-50 hover:opacity-100 transition-all duration-200"><i class="cursor-pointer-none fa fa-linkedin fa-xl"></i></a>
+        <a href="/www.linkedin.com/in/alessandro-longo-2305d002" class="white opacity-50 hover:opacity-100 transition-all duration-200"><i class="cursor-pointer-none fa fa-linkedin fa-xl"></i></a>
         <a href="" class="white opacity-50 hover:opacity-100 transition-all duration-200"><i class="cursor-pointer-none fa fa-github fa-xl"></i></a>
         <a href="" class="white opacity-50 hover:opacity-100 transition-all duration-200"><i class="cursor-pointer-none fa fa-instagram fa-xl"></i></a>
     </div>
 </div>
 
 <div id="right-section" class="absolute right-0 flex flex-col w-full h-screen pe-40 ps-8 py-24 overflow-y-auto">
-    <slot />
+    <!-- {@render children?.()} -->
 </div>
+
 
 <style>
     :global(*) {

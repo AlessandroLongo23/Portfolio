@@ -1,8 +1,11 @@
 <script>
-    export let title = '';
-    export let date = '';
-    export let technologies = [];
-    export let classes = '';
+    /** @type {{title?: string, date?: string, technologies?: any, classes?: string}} */
+    let {
+        title = '',
+        date = '',
+        technologies = [],
+        classes = ''
+    } = $props();
 </script>
 
 <a href="">
